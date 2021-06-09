@@ -24,4 +24,26 @@ int main() {
 	findSmall(arr);
 	return 0;
 }
+/////////////////////////////////////////////////////////////////////////////////////
+que - 2 
 
+#include <iostream>
+using namespace std;
+
+void findMed(int arr[]){
+    int sum = 0;
+    for(int i = 0; i < 10; i++){
+        sum += arr[i];
+        cout << " median -" << sum/(i+1) ;
+    }
+}
+
+int main() {
+	// your code goes here
+	int arr[10];
+	for(int i = 0; i < 10; i++){
+	    cin >> arr[i];
+	}
+	findMed(arr);
+	return 0;
+}
